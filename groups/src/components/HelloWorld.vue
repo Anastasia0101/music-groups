@@ -44,7 +44,7 @@
       async loadMusic() {
         let url = 'http://localhost:3001';
         if (this.options.sortBy && this.options.sortBy.length) {
-          url += `?sort_by=${this.options.sortBy[0]}&sort_desc=${this.options.sortDesc[0]}`
+          url += `?sort_by=${this.options.sortBy[0]}`
         }
         this.music = await fetch(url).then(response => response.json())
       }
